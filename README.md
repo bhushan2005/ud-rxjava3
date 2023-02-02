@@ -17,18 +17,14 @@ RxJava3 From Udemy
 
 ## FAQ
 
-1. How to setup this project in IntelliJ?  
- - From Intellij, create a new project as ud-rxjava3 and create it in location ~/My/Courses.
- - While creation, check the 'Create a Git Repository' checkbox.
- - Select Java 17 (downloaded from Oracle site), Maven, Spring Boot 3.0.2 and Jar file type.
- - Once project is created, it will be available as Maven project in Idea
- - Also, the location of project will be ~/My/Courses/ud-rxjava3.
- - This directory will also have .git files.
- - Create a repository on github with the name 'ud-rxjava3'. This should be empty without .gitignore, README.md or license file.
- - Now in ud-rxjava3 run the following commands:
-   - > git remote add origin git@github.com:bhushan2005/ud-spring-test.git  
-     > git branch -M main  
-     > git add .  
-     > git commit -m "Initial commit"  
-     > git push -u origin main  
- - This will push the created project files in github.
+1. How to setup Hello World program?  
+ - Add rxjava maven dependency from maven repo.
+ - Create Observable (Subject) which generates events for string Hello and World.
+ - Create observers (subscribers) to the subject and write the callbacks (which print the event)
+ - The program when run gives followng output
+ - ```
+   Observer 1 Hello
+Observer 1 World
+Observer 2 Hello
+Observer 2 World
+```
