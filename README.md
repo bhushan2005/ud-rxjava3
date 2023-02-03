@@ -22,9 +22,9 @@ RxJava3 From Udemy
  - Create Observable (Subject) which generates events for string Hello and World.
  - Create observers (subscribers) to the subject and write the callbacks (which print the event)
  - The program when run gives followng output
- - ```
-   Observer 1 Hello
-Observer 1 World
-Observer 2 Hello
-Observer 2 World
-```
+
+> Observer 1 Hello  
+> Observer 1 World  
+> Observer 2 Hello  
+> Observer 2 World
+
