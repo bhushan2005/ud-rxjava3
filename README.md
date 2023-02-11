@@ -13,9 +13,12 @@ RxJava3 From Udemy
 
 ## Documentation
 
-Different overloaded methods to create Observer.
-1. Only pass consumer for onNext().
-2. Pass consumer for onNext(), onError().
-3. Pass consumer for onNext(), onError(), onComplete().
+Cold Observable replays all the events for all the 
+observer irrespective when they have subscribed.
+
+In the example, an element is added to the list and then the next
+observer subscribes to the observable. It gets all the
+events right from start.
+
 
 ## FAQ
