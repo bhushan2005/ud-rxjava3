@@ -13,19 +13,9 @@ RxJava3 From Udemy
 
 ## Documentation
 
-Different ways to create Observable.
-1. create
-2. just
-3. fromIterable
-4. range
-5. interval
-6. empty
-7. never
-
-There are some more but I have only put examples of above.  
-Observable from empty() only calls onComplete() and not onNext() or onError().  
-Observable from never() does not call anything.  
-Observable from interval() runs in a seperate thread and emits events. Hence, we need to put Thread.sleep() in main
-so that the main thread does not exit.
+Different overloaded methods to create Observer.
+1. Only pass consumer for onNext().
+2. Pass consumer for onNext(), onError().
+3. Pass consumer for onNext(), onError(), onComplete().
 
 ## FAQ
