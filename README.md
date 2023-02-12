@@ -13,12 +13,13 @@ RxJava3 From Udemy
 
 ## Documentation
 
-Cold Observable replays all the events for all the 
-observer irrespective when they have subscribed.
+Hot Observable replays the events as and when the Observer joins.
+The observer doesn't get all the events that Observable had emitted since it started.
 
-In the example, an element is added to the list and then the next
-observer subscribes to the observable. It gets all the
-events right from start.
+
+When you create an Observable and call publish method on it, it creates 
+a Hot Observable. (returns ConnectableObservable)
+
 
 
 ## FAQ
