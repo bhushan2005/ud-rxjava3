@@ -13,12 +13,9 @@ RxJava3 From Udemy
 
 ## Documentation
 
-Hot Observable replays the events as and when the Observer joins.
-The observer doesn't get all the events that Observable had emitted since it started.
-
-
-When you create an Observable and call publish method on it, it creates 
-a Hot Observable. (returns ConnectableObservable)
+1. Single Observable will only emit 1 item. 
+2. Maybe Observable will emit either 0 or 1 item only.
+3. Completable Observerable will not emit anything. It will just complete.
 
 
 
